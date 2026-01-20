@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Converting Json file to JS</h1>
+    <p id="result"></p>
+    <script>
+        var myob={
+            "name": "Aryaveer",
+            "age": 13,
+            "city": "Kanpur"
+        }
+        var myJSON=JSON.stringify(myob);
+        var myobj=JSON.parse(myJSON);
+        document.getElementById("result").innerHTML=myobj.name + ", " + myobj.age + ", " + myobj.city;
+        </script>
+</body>
+</html>
